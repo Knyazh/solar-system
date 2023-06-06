@@ -1,0 +1,94 @@
+    body {
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    .sun {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #ffdd00;
+      animation: spin 20s linear infinite;
+    }
+    
+    .p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      background-color: #57c7ff;
+      animation: orbit 10s linear infinite;
+    }
+    
+    .mercury {
+      animation-duration: 2s;
+      background-color: rgb(220, 181, 181);
+      width: 50px;
+      height: 50px;
+    }
+    
+    .venus {
+      animation-duration: 3s;
+      background-color: #2a83a10a;
+      width: 70px;
+      height: 70px;
+    }
+    
+    .earth {
+        background-color: #8b8c8d;
+      animation-duration: 7s;
+      width: 90px;
+      height: 90px;
+    }
+    
+    .mars {
+      animation-duration: 10s;
+      background-color: rebeccapurple;
+      width: 45px;
+      height: 45px;
+    }
+    
+    .jupiter {
+      animation-duration: 12s;
+      background-color: red;
+      width: 30px;
+      height: 30px;
+    }
+    
+    .saturn {
+      animation-duration: 15s;
+      background-color: green;
+      width: 85px;
+      height: 85px;
+    }
+    
+    .uranus {
+      animation-duration: 20s;
+      background-color: mediumslateblue;
+      width: 65px;
+      height: 65px;
+    }
+    
+    .neptune {
+      animation-duration: 30s;
+      background-color: aqua;
+      width: 70px;
+      height: 70px;
+    }
+    
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+    
+    @keyframes orbit {
+      0% { transform: translate(-50%, -50%) rotate(0deg) translateX(250px) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg) translateX(250px) rotate(-360deg); }
+    }
+  
